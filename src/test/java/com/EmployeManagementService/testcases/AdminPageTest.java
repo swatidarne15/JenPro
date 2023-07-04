@@ -15,10 +15,10 @@ import Utility.Parametarization;
 
 public class AdminPageTest extends BaseClass{
 	AdminPage ap;
-	@Parameters({"browser"})
+//	@Parameters({"browser"})
 	@BeforeMethod
-	public void BeforeMethod(String browser) throws EncryptedDocumentException, InvalidFormatException, IOException, InterruptedException{
-		initialisation(browser);
+	public void BeforeMethod() throws EncryptedDocumentException, InvalidFormatException, IOException, InterruptedException{
+		initialisation();
 		ap= LoadLoginPage().Login(Parametarization.getData("Sheet1", 3, 0), prop.getProperty("password")).admintab();
 	}
 	

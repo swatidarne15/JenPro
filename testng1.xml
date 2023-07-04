@@ -2,7 +2,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-<parameter name="browser" value="chrome"></parameter>
 <listeners>  <listener class-name="Utility.Listener"/>  </listeners>
   <test thread-count="5" name="Test">
     <classes>

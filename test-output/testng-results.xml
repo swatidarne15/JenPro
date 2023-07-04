@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-22T10:36:02 IST" name="Suite" finished-at="2023-06-22T10:37:52 IST" duration-ms="110601">
+  <suite started-at="2023-07-03T12:17:40 IST" name="Suite" finished-at="2023-07-03T12:19:44 IST" duration-ms="123950">
     <groups>
       <group name="a">
         <method signature="AdminPageTest.emailConfigurationTest()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" name="emailConfigurationTest" class="com.EmployeManagementService.testcases.AdminPageTest"/>
@@ -16,9 +16,9 @@
         <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" name="verifyLogin" class="com.EmployeManagementService.testcases.LoginPageTest"/>
       </group> <!-- c -->
     </groups>
-    <test started-at="2023-06-22T10:36:02 IST" name="Test" finished-at="2023-06-22T10:37:52 IST" duration-ms="110601">
+    <test started-at="2023-07-03T12:17:40 IST" name="Test" finished-at="2023-07-03T12:19:44 IST" duration-ms="123950">
       <class name="com.EmployeManagementService.testcases.DashboardPageTest">
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-06-22T10:36:02 IST" name="BeforeMethod" finished-at="2023-06-22T10:36:13 IST" duration-ms="11584" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:17:40 IST" name="BeforeMethod" finished-at="2023-07-03T12:17:55 IST" duration-ms="14965" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,15 +29,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="validateAdminTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-06-22T10:36:13 IST" name="validateAdminTab" finished-at="2023-06-22T10:36:20 IST" duration-ms="7215" status="PASS">
+        <test-method signature="validateAdminTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:17:55 IST" name="validateAdminTab" finished-at="2023-07-03T12:18:03 IST" duration-ms="7436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAdminTab -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-06-22T10:36:20 IST" name="closeBrowser" finished-at="2023-06-22T10:36:24 IST" duration-ms="3438" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:18:03 IST" name="closeBrowser" finished-at="2023-07-03T12:18:06 IST" duration-ms="3887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-06-22T10:36:24 IST" name="BeforeMethod" finished-at="2023-06-22T10:36:33 IST" duration-ms="9087" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:18:06 IST" name="BeforeMethod" finished-at="2023-07-03T12:18:19 IST" duration-ms="12724" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,17 +48,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="validatePimTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-06-22T10:36:33 IST" name="validatePimTab" finished-at="2023-06-22T10:36:38 IST" duration-ms="5027" status="PASS">
+        <test-method signature="validatePimTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:18:19 IST" name="validatePimTab" finished-at="2023-07-03T12:18:24 IST" duration-ms="5247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePimTab -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-06-22T10:36:38 IST" name="closeBrowser" finished-at="2023-06-22T10:36:42 IST" duration-ms="3700" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:18:24 IST" name="closeBrowser" finished-at="2023-07-03T12:18:28 IST" duration-ms="3695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.EmployeManagementService.testcases.DashboardPageTest -->
       <class name="com.EmployeManagementService.testcases.AdminPageTest">
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" started-at="2023-06-22T10:37:11 IST" name="BeforeMethod" finished-at="2023-06-22T10:37:30 IST" duration-ms="18651" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" started-at="2023-07-03T12:19:01 IST" name="BeforeMethod" finished-at="2023-07-03T12:19:21 IST" duration-ms="19688" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,17 +69,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="emailConfigurationTest()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" started-at="2023-06-22T10:37:30 IST" name="emailConfigurationTest" finished-at="2023-06-22T10:37:49 IST" duration-ms="19157" status="PASS">
+        <test-method signature="emailConfigurationTest()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" started-at="2023-07-03T12:19:21 IST" name="emailConfigurationTest" finished-at="2023-07-03T12:19:40 IST" duration-ms="19626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailConfigurationTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" started-at="2023-06-22T10:37:49 IST" name="closeBrowser" finished-at="2023-06-22T10:37:52 IST" duration-ms="3447" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" started-at="2023-07-03T12:19:40 IST" name="closeBrowser" finished-at="2023-07-03T12:19:44 IST" duration-ms="3707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.EmployeManagementService.testcases.AdminPageTest -->
       <class name="com.EmployeManagementService.testcases.LoginPageTest">
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-06-22T10:36:42 IST" name="BeforeMethod" finished-at="2023-06-22T10:36:47 IST" duration-ms="5693" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:28 IST" name="BeforeMethod" finished-at="2023-07-03T12:18:35 IST" duration-ms="6727" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,15 +90,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="validateLogo()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-06-22T10:36:47 IST" name="validateLogo" finished-at="2023-06-22T10:36:53 IST" duration-ms="6049" status="PASS">
+        <test-method signature="validateLogo()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:35 IST" name="validateLogo" finished-at="2023-07-03T12:18:41 IST" duration-ms="6061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLogo -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-06-22T10:36:53 IST" name="closeBrowser" finished-at="2023-06-22T10:36:57 IST" duration-ms="3448" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:41 IST" name="closeBrowser" finished-at="2023-07-03T12:18:45 IST" duration-ms="3619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-06-22T10:36:57 IST" name="BeforeMethod" finished-at="2023-06-22T10:37:01 IST" duration-ms="4314" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:45 IST" name="BeforeMethod" finished-at="2023-07-03T12:18:51 IST" duration-ms="6488" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -109,7 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-06-22T10:37:01 IST" name="verifyLogin" data-provider="loginData" finished-at="2023-06-22T10:37:07 IST" duration-ms="5785" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:51 IST" name="verifyLogin" data-provider="loginData" finished-at="2023-07-03T12:18:57 IST" duration-ms="5681" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,7 +125,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-06-22T10:37:07 IST" name="closeBrowser" finished-at="2023-06-22T10:37:11 IST" duration-ms="3759" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:57 IST" name="closeBrowser" finished-at="2023-07-03T12:19:01 IST" duration-ms="3887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

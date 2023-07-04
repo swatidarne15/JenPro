@@ -17,10 +17,10 @@ import Utility.Parametarization;
 public class DashboardPageTest extends BaseClass {
 	
 	DashboardPage dp;
-	@Parameters({"browser"})
+//	@Parameters({"browser"})
 	@BeforeMethod
-	public void BeforeMethod(String browser) throws EncryptedDocumentException, InvalidFormatException, IOException, InterruptedException{
-		initialisation(browser);
+	public void BeforeMethod() throws EncryptedDocumentException, InvalidFormatException, IOException, InterruptedException{
+		initialisation();
 		dp=LoadLoginPage().Login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	@Test(groups = {"b"})

@@ -35,29 +35,29 @@ public class BaseClass {
 		}
 		
 	}
-	public  void initialisation(String browser) throws EncryptedDocumentException, InvalidFormatException, IOException {
-		if(browser.equalsIgnoreCase("chrome")) {
+	public  void initialisation() throws EncryptedDocumentException, InvalidFormatException, IOException {
+		//if(browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\A200232695\\Documents\\chromedriver.exe");
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--start-maximized");
 		//	chromeOptions.addArguments("--headless");
 			chromeOptions.addArguments("--remote-allow-origins=*");
 			driver=new ChromeDriver(chromeOptions);
-		}
-		else if(browser.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.addArguments("--start-maximized");
-			firefoxOptions.addArguments("--remote-allow-origin=*");
-			driver = new FirefoxDriver();
-		}
-		else if(browser.equalsIgnoreCase("edge")) {
-			WebDriverManager.edgedriver().setup();
-			driver= new EdgeDriver();
-		}
-		else {
-			System.out.println("please select valid browswe");
-		}
+	//	}
+//		else if(browser.equalsIgnoreCase("firefox")) {
+//			WebDriverManager.firefoxdriver().setup();
+//			FirefoxOptions firefoxOptions = new FirefoxOptions();
+//			firefoxOptions.addArguments("--start-maximized");
+//			firefoxOptions.addArguments("--remote-allow-origin=*");
+//			driver = new FirefoxDriver();
+//		}
+//		else if(browser.equalsIgnoreCase("edge")) {
+//			WebDriverManager.edgedriver().setup();
+//			driver= new EdgeDriver();
+//		}
+//		else {
+//			System.out.println("please select valid browswe");
+	//	}
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(Parametarization.getData("sheet1", 0, 1));
 		

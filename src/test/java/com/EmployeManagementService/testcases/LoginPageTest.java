@@ -22,10 +22,10 @@ import Utility.ExcelDataProvider;
 public class LoginPageTest extends BaseClass {
 	LoginPage lp;
 	
-	@Parameters({"browser"})
+	//@Parameters({"browser"})
 	@BeforeMethod
-	public void BeforeMethod(String browser) throws EncryptedDocumentException, InvalidFormatException, IOException{
-		initialisation(browser);
+	public void BeforeMethod() throws EncryptedDocumentException, InvalidFormatException, IOException{
+		initialisation();
 		lp=LoadLoginPage();	
 	}
 	
