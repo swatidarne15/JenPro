@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="Utility.Listener"/>
   </listeners>
@@ -14,6 +13,22 @@
           <include name="emailConfigurationTest"/>
         </methods>
       </class> <!-- com.EmployeManagementService.testcases.AdminPageTest -->
+      <class name="com.EmployeManagementService.testcases.DashboardPageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="validatePimTab"/>
+          <include name="BeforeMethod"/>
+          <include name="validateAdminTab"/>
+        </methods>
+      </class> <!-- com.EmployeManagementService.testcases.DashboardPageTest -->
+      <class name="com.EmployeManagementService.testcases.LoginPageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="validateLogo"/>
+          <include name="BeforeMethod"/>
+          <include name="verifyLogin"/>
+        </methods>
+      </class> <!-- com.EmployeManagementService.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

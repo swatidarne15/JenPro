@@ -1,115 +1,437 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-03T12:17:40 IST" name="Suite" finished-at="2023-07-03T12:19:44 IST" duration-ms="123950">
+  <suite started-at="2023-07-04T12:53:46 IST" name="Suite" finished-at="2023-07-04T12:53:46 IST" duration-ms="604">
     <groups>
       <group name="a">
-        <method signature="AdminPageTest.emailConfigurationTest()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" name="emailConfigurationTest" class="com.EmployeManagementService.testcases.AdminPageTest"/>
+        <method signature="AdminPageTest.emailConfigurationTest()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@78123e82]" name="emailConfigurationTest" class="com.EmployeManagementService.testcases.AdminPageTest"/>
       </group> <!-- a -->
       <group name="b">
-        <method signature="DashboardPageTest.validateAdminTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" name="validateAdminTab" class="com.EmployeManagementService.testcases.DashboardPageTest"/>
-        <method signature="DashboardPageTest.validatePimTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" name="validatePimTab" class="com.EmployeManagementService.testcases.DashboardPageTest"/>
+        <method signature="DashboardPageTest.validateAdminTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@49912c99]" name="validateAdminTab" class="com.EmployeManagementService.testcases.DashboardPageTest"/>
+        <method signature="DashboardPageTest.validatePimTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@49912c99]" name="validatePimTab" class="com.EmployeManagementService.testcases.DashboardPageTest"/>
       </group> <!-- b -->
       <group name="c">
-        <method signature="LoginPageTest.validateLogo()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" name="validateLogo" class="com.EmployeManagementService.testcases.LoginPageTest"/>
-        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" name="verifyLogin" class="com.EmployeManagementService.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.validateLogo()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@76c3e77a]" name="validateLogo" class="com.EmployeManagementService.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@76c3e77a]" name="verifyLogin" class="com.EmployeManagementService.testcases.LoginPageTest"/>
       </group> <!-- c -->
     </groups>
-    <test started-at="2023-07-03T12:17:40 IST" name="Test" finished-at="2023-07-03T12:19:44 IST" duration-ms="123950">
+    <test started-at="2023-07-04T12:53:46 IST" name="Test" finished-at="2023-07-04T12:53:46 IST" duration-ms="604">
       <class name="com.EmployeManagementService.testcases.DashboardPageTest">
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:17:40 IST" name="BeforeMethod" finished-at="2023-07-03T12:17:55 IST" duration-ms="14965" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@49912c99]" started-at="2023-07-04T12:53:46 IST" name="BeforeMethod" finished-at="2023-07-04T12:53:46 IST" duration-ms="34" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at com.EmployeManagementService.base.BaseClass.initialisation(BaseClass.java:45)
+at com.EmployeManagementService.testcases.DashboardPageTest.BeforeMethod(DashboardPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="validateAdminTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:17:55 IST" name="validateAdminTab" finished-at="2023-07-03T12:18:03 IST" duration-ms="7436" status="PASS">
+        <test-method signature="validateAdminTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@49912c99]" started-at="2023-07-04T12:53:46 IST" name="validateAdminTab" finished-at="2023-07-04T12:53:46 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at com.EmployeManagementService.base.BaseClass.initialisation(BaseClass.java:45)
+at com.EmployeManagementService.testcases.DashboardPageTest.BeforeMethod(DashboardPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAdminTab -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:18:03 IST" name="closeBrowser" finished-at="2023-07-03T12:18:06 IST" duration-ms="3887" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@49912c99]" started-at="2023-07-04T12:53:46 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688455426245" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:18:06 IST" name="BeforeMethod" finished-at="2023-07-03T12:18:19 IST" duration-ms="12724" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@49912c99]" started-at="2023-07-04T12:53:46 IST" name="BeforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688455426247" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="validatePimTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:18:19 IST" name="validatePimTab" finished-at="2023-07-03T12:18:24 IST" duration-ms="5247" status="PASS">
+        <test-method signature="validatePimTab()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@49912c99]" started-at="2023-07-04T12:53:46 IST" name="validatePimTab" finished-at="2023-07-04T12:53:46 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at com.EmployeManagementService.base.BaseClass.initialisation(BaseClass.java:45)
+at com.EmployeManagementService.testcases.DashboardPageTest.BeforeMethod(DashboardPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePimTab -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@446293d]" started-at="2023-07-03T12:18:24 IST" name="closeBrowser" finished-at="2023-07-03T12:18:28 IST" duration-ms="3695" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.DashboardPageTest@49912c99]" started-at="2023-07-04T12:53:46 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688455426253" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.EmployeManagementService.testcases.DashboardPageTest -->
       <class name="com.EmployeManagementService.testcases.AdminPageTest">
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" started-at="2023-07-03T12:19:01 IST" name="BeforeMethod" finished-at="2023-07-03T12:19:21 IST" duration-ms="19688" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@78123e82]" started-at="2023-07-04T12:53:46 IST" name="BeforeMethod" finished-at="2023-07-04T12:53:46 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at com.EmployeManagementService.base.BaseClass.initialisation(BaseClass.java:45)
+at com.EmployeManagementService.testcases.AdminPageTest.BeforeMethod(AdminPageTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="emailConfigurationTest()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" started-at="2023-07-03T12:19:21 IST" name="emailConfigurationTest" finished-at="2023-07-03T12:19:40 IST" duration-ms="19626" status="PASS">
+        <test-method signature="emailConfigurationTest()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@78123e82]" started-at="2023-07-04T12:53:46 IST" name="emailConfigurationTest" finished-at="2023-07-04T12:53:46 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at com.EmployeManagementService.base.BaseClass.initialisation(BaseClass.java:45)
+at com.EmployeManagementService.testcases.AdminPageTest.BeforeMethod(AdminPageTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailConfigurationTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@4d0f2471]" started-at="2023-07-03T12:19:40 IST" name="closeBrowser" finished-at="2023-07-03T12:19:44 IST" duration-ms="3707" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.AdminPageTest@78123e82]" started-at="2023-07-04T12:53:46 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688455426767" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.EmployeManagementService.testcases.AdminPageTest -->
       <class name="com.EmployeManagementService.testcases.LoginPageTest">
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:28 IST" name="BeforeMethod" finished-at="2023-07-03T12:18:35 IST" duration-ms="6727" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@76c3e77a]" started-at="2023-07-04T12:53:46 IST" name="BeforeMethod" finished-at="2023-07-04T12:53:46 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at com.EmployeManagementService.base.BaseClass.initialisation(BaseClass.java:45)
+at com.EmployeManagementService.testcases.LoginPageTest.BeforeMethod(LoginPageTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="validateLogo()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:35 IST" name="validateLogo" finished-at="2023-07-03T12:18:41 IST" duration-ms="6061" status="PASS">
+        <test-method signature="validateLogo()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@76c3e77a]" started-at="2023-07-04T12:53:46 IST" name="validateLogo" finished-at="2023-07-04T12:53:46 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at com.EmployeManagementService.base.BaseClass.initialisation(BaseClass.java:45)
+at com.EmployeManagementService.testcases.LoginPageTest.BeforeMethod(LoginPageTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLogo -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:41 IST" name="closeBrowser" finished-at="2023-07-03T12:18:45 IST" duration-ms="3619" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@76c3e77a]" started-at="2023-07-04T12:53:46 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688455426264" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:45 IST" name="BeforeMethod" finished-at="2023-07-03T12:18:51 IST" duration-ms="6488" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@76c3e77a]" started-at="2023-07-04T12:53:46 IST" name="BeforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688455426752" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:51 IST" name="verifyLogin" data-provider="loginData" finished-at="2023-07-03T12:18:57 IST" duration-ms="5681" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@76c3e77a]" started-at="2023-07-04T12:53:46 IST" name="verifyLogin" data-provider="loginData" finished-at="2023-07-04T12:53:46 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -122,10 +444,61 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: C:\Users\A200232695\Documents\chromedriver.exe
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:142)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:70)
+at com.EmployeManagementService.base.BaseClass.initialisation(BaseClass.java:45)
+at com.EmployeManagementService.testcases.LoginPageTest.BeforeMethod(LoginPageTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@32ee6fee]" started-at="2023-07-03T12:18:57 IST" name="closeBrowser" finished-at="2023-07-03T12:19:01 IST" duration-ms="3887" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.EmployeManagementService.testcases.LoginPageTest@76c3e77a]" started-at="2023-07-04T12:53:46 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688455426757" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

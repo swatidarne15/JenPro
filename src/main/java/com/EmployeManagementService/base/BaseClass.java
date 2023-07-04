@@ -37,7 +37,7 @@ public class BaseClass {
 	}
 	public  void initialisation() throws EncryptedDocumentException, InvalidFormatException, IOException {
 		//if(browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\A200232695\\Documents\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--start-maximized");
 		//	chromeOptions.addArguments("--headless");
